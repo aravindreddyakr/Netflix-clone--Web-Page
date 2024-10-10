@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: white;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: #e50914;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .search-bar {
+            margin-left: 20px;
+        }
+        .search-bar input {
+            padding: 5px 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #e50914;
+            color: white;
+            cursor: pointer;
+        }
+        main {
+            padding: 20px;
+        }
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .movie-item {
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+        .movie-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .movie-item p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #000;
+            color: #757575;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">NETFLIX</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">New & Popular</a>
+            <a href="#">My List</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>🔍</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Popular on Netflix</h1>
+        <div class="movie-list">
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg" alt="Inception">
+                <p>Inception</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="The Shawshank Redemption">
+                <p>The Shawshank Redemption</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="Pulp Fiction">
+                <p>Pulp Fiction</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="The Dark Knight">
+                <p>The Dark Knight</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" alt="Forrest Gump">
+                <p>Forrest Gump</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" alt="The Matrix">
+                <p>The Matrix</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="Goodfellas">
+                <p>Goodfellas</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="The Godfather">
+                <p>The Godfather</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" alt="The Silence of the Lambs">
+                <p>The Silence of the Lambs</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg" alt="Jurassic Park">
+                <p>Jurassic Park</p>
+            </div>
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg" alt="Star Wars: Episode IV - A New Hope">
+                <p>Star Wars: Episode IV - A New Hope</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Netflix Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
